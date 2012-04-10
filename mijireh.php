@@ -23,8 +23,8 @@ class Mijireh_InternalError extends Mijireh_ServerError {}     /* Status: 500 */
 class Mijireh {
   
   /* Live server urls */
-  public static $base_url = 'http://mist.mijireh.com/';
-  public static $url      = 'http://mist.mijireh.com/api/1/';
+  public static $base_url = 'https://secure.mijireh.com/';
+  public static $url      = 'https://secure.mijireh.com/api/1/';
   
   public static $access_key;
   
