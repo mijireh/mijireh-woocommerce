@@ -1,7 +1,7 @@
 WooCommerce Extension For Mijireh
 =================================
 
-WooCommerce is an open source ecommerce plugin for WordPress. Mijireh is a fully PCI compliant, secure hosted checkout page that works with a large variety of payment gateways. The Mijireh extension makes it possible to securely accept credit card payments with a wide variety of payment gateways such as Authorize.net, Stripe, eWay, SagePay, PayPal, BrainTree and others. If you need support for another gateway, just [let us know](http://www.mijireh.com). Forget about paying $50 just to use one gateway and still not meet the PCI compliance requirements. Now you can use any payment gateway you want on a fully PCI compliant server with the FREE plugin!
+WooCommerce is an open source ecommerce plugin for WordPress. [Mijireh](http://mijireh.com) is a fully PCI compliant, secure hosted checkout page that works with a large variety of payment gateways. The Mijireh extension makes it possible to securely accept credit card payments with a wide variety of payment gateways such as Authorize.net, Stripe, eWay, SagePay, PayPal, BrainTree and others. If you need support for another gateway, just [let us know](http://www.mijireh.com). Forget about paying $50 just to use one gateway and still not meet the PCI compliance requirements. Now you can use any payment gateway you want on a fully PCI compliant server with the FREE plugin!
 
 Learn more about what it means to be PCI compliant by reading [What you need to know about PCI Compliance](http://www.mijireh.com/docs/what-you-need-to-know-about-pci-compliance/) 
 
