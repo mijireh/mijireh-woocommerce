@@ -61,7 +61,7 @@ function woocommerce_mijireh_checkout_init() {
   		$this->id = 'mijireh_checkout';
   		$this->icon = apply_filters('mijireh_checkout_icon', WP_PLUGIN_URL . "/" . plugin_basename( dirname(__FILE__)) . '/images/mijireh.png');
       $this->has_fields = false;
-      $this->method_title = __( 'Mijireh Checkout', 'mijireh_checkout' );
+      $this->method_title = __( 'Credit Card', 'mijireh_checkout' );
       $this->url = WP_PLUGIN_URL . "/" . plugin_basename( dirname(__FILE__));
       
       $this->init_form_fields();
@@ -138,13 +138,13 @@ function woocommerce_mijireh_checkout_init() {
         'title' => array(
   				'title' => __( 'Title', 'mijireh_checkout' ), 
 					'type' => 'text', 
-					'description' => __( 'This controls the title which the user sees during checkout.', 'mijireh_checkout' ), 
-					'default' => __( 'Mijireh Checkout', 'mijireh_checkout' )
+					'description' => __( 'Pay securely with your credit card.', 'mijireh_checkout' ), 
+					'default' => __( 'Credit Card', 'mijireh_checkout' )
 				),
 				'description' => array(
   				'title' => __( 'Description', 'mijireh_checkout' ), 
   				'type' => 'textarea', 
-  				'description' => __( 'Description of Mijireh that the customer will see on your website.', 'mijireh_checkout' ), 
+  				'description' => __( 'Pay securely with you credit card.', 'mijireh_checkout' ), 
   				'default' => 'Pay securely with your credit card.'
   			),
       );
