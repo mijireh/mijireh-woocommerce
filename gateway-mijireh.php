@@ -167,7 +167,7 @@ function woocommerce_mijireh_checkout_init() {
       $items = $wc_order->get_items();
       foreach($items as $item) {
         $product = $wc_order->get_product_from_item($item);
-        $mj_order->add_item($item['name'], $item['line_total'], $item['qty'], $product->sku);
+        $mj_order->add_item($item['name'], $wc_order->get_item_total($item), $item['qty'], $product->sku);
       }
       
       // add billing address to order
