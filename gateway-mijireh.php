@@ -59,7 +59,7 @@ function woocommerce_mijireh_checkout_init() {
 	    }
 	    
   		$this->id = 'mijireh_checkout';
-  		$this->icon = apply_filters('mijireh_checkout_icon', WP_PLUGIN_URL . "/" . plugin_basename( dirname(__FILE__)) . '/images/mijireh.png');
+  		$this->icon = apply_filters('mijireh_checkout_icon', WP_PLUGIN_URL . "/" . plugin_basename( dirname(__FILE__)) . '/images/credit_cards.png');
       $this->has_fields = false;
       $this->method_title = __( 'Credit Card', 'mijireh_checkout' );
       $this->url = WP_PLUGIN_URL . "/" . plugin_basename( dirname(__FILE__));
