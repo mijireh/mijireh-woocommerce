@@ -59,9 +59,9 @@ function woocommerce_mijireh_checkout_init() {
 	    }
 	    
   		$this->id = 'mijireh_checkout';
-  		$this->icon = apply_filters('mijireh_checkout_icon', WP_PLUGIN_URL . "/" . plugin_basename( dirname(__FILE__)) . '/images/credit_cards.png');
+  		$this->icon = apply_filters('mijireh_checkout_icon', WP_PLUGIN_URL . '/' . basename(dirname(__FILE__)) . '/images/credit_cards.png');
       $this->has_fields = false;
-      $this->method_title = __( 'Credit Card', 'mijireh_checkout' );
+      $this->method_title = __( 'Mijireh Checkout', 'mijireh_checkout' );
       $this->url = WP_PLUGIN_URL . "/" . plugin_basename( dirname(__FILE__));
       
       $this->init_form_fields();
@@ -172,6 +172,8 @@ function woocommerce_mijireh_checkout_init() {
       
       // add billing address to order
       $billing = new Mijireh_Address();
+      $billing->first_name = $wc_order->billing_first_name;
+      $billing->last_name = $wc_order->billing_last_name;
       $billing->street = $wc_order->billing_address_1;
       $billing->apt_suite = $wc_order->billing_address_2;
       $billing->city = $wc_order->billing_city;
@@ -186,6 +188,8 @@ function woocommerce_mijireh_checkout_init() {
       
       // add shipping address to order
       $shipping = new Mijireh_Address();
+      $shipping->first_name = $wc_order->shipping_first_name;
+      $shipping->last_name = $wc_order->shipping_last_name;
       $shipping->street = $wc_order->shipping_address_1;
       $shipping->apt_suite = $wc_order->shipping_address_2;
       $shipping->city = $wc_order->shipping_city;

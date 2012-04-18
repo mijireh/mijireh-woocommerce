@@ -117,6 +117,7 @@ class Mijireh_Order extends Mijireh_Model {
     
     $pest = new PestJSON(Mijireh::$url);
     $pest->setupAuth(Mijireh::$access_key, '');
+    
     try {
       $result = $pest->post('orders', $this->get_data());
       $this->copy_from($result);
